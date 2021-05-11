@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+  devtools:
+    restart:
+      #需要实时更新的目录
+      additional-paths: resources/**,static/**,templates/**
+
+# jwt相关配置
+jwt:
+  secret: account123
+  expiration: 7200000
+  token: Authorization
